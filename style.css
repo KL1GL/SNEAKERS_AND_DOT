@@ -28,7 +28,6 @@ a {
     flex-direction: column;
     background: var(--white, #FFF);
     width: 100%;
-    height: 110px;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid var(--text_gray, #A1A6B4);
@@ -37,9 +36,8 @@ a {
 .up {
     display: flex;
     width: 100%;
-    height: 26px;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 20px 20px;
     align-items: center;
 }
 
@@ -157,8 +155,7 @@ a {
     flex-direction: column;
     background: var(--black, #121723);
     width: 100%;
-    height: 142px;
-    padding: 0 20px;
+    padding: 20px 20px;
     justify-content: center;
     align-items: center;
 }
@@ -267,6 +264,27 @@ a {
 
 /* ADAPTATION - START */
 
+@media screen and (max-width: 520px) {
+    .up {
+        flex-direction: column;
+    }
+
+    .down {
+        flex-direction: column;
+    }
+
+    .sneaker_all {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .h1 {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
 /* ADAPTATION - END */
 
 /*!!!!!! FOR ANOTHER PAGES - start!!!!!!*/
@@ -333,6 +351,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .h3_pages {
@@ -479,4 +498,36 @@ a {
     transition: transform ease-in-out 100ms;
 }
 
-/*!!!!!!FOR ANOTHER PAGES - start!!!!!!*/
+/* ADAPTATION */
+
+@media screen and (max-width: 520px) {
+    .up {
+        flex-direction: column;
+    }
+
+    .down {
+        flex-direction: column;
+    }
+
+    .main_pages>div>div>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .all_container_pages {
+        padding: 12px;
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+
+    .about_sneaker_pages {
+        margin-top: -40px;
+    }
+
+    .also_like_pages {
+        display: none;
+    }
+
+}
+
+/*!!!!!!FOR ANOTHER PAGES - end!!!!!!*/
