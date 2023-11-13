@@ -1,0 +1,430 @@
+/* CSS */
+
+/* For everything */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #F1F1F1;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    display: inline-flex;
+    list-style-type: none;
+    gap: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background: var(--white, #FFF);
+    width: 100%;
+    height: 110px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--text_gray, #A1A6B4);
+}
+
+.up {
+    display: flex;
+    width: 100%;
+    height: 26px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.up>a>img {
+    width: 212px;
+    height: 63px;
+    flex-shrink: 0;
+}
+
+
+.nav>ul>li>a {
+    color: #000000;
+    font-family: "Anonymous Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* MAIN */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    gap: 25px;
+}
+
+.sneaker-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sneaker_all {
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.link_img>img {
+    width: 350px;
+    height: 290px;
+}
+
+.sneaker>div>img {
+    width: 350px;
+    height: 290px;
+}
+
+.card {
+    border-radius: 12px 12px 12px 12px;
+    background: var(--white, #FFF);
+}
+
+.link_img>img {
+    border-radius: 12px 12px 0px 0px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.card>img {
+    border-radius: 12px 12px 0px 0px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.about {
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 0px 24px;
+    align-items: flex-start;
+}
+
+/* TEXT */
+
+.sneaker_name {
+    color: var(--black, #121723);
+    font-family: "Anonymous Pro";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.description {
+    color: var(--black, #121723);
+    font-family: "Anonymous Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.h1 {
+    color: var(--black, #121723);
+    font-family: "Anonymous Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    margin-right: 17%;
+    width: 767px;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background: var(--black, #121723);
+    width: 100%;
+    height: 142px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_down>img {
+    width: 299px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.down {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_down>ul>li>a {
+    color: var(--white, #FFF);
+    font-family: "Anonymous Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.last_logo {
+    color: var(--text_gray, #A1A6B4);
+    font-family: "Anonymous Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tire_down {
+    width: 75%;
+    border-top: 1px solid var(--gray-100, #676B73);
+}
+
+/* Animations */
+
+.link_img:hover {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.card_links:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    transition: box-shadow ease-in-out 150ms;
+    transition: transform ease-in-out 100ms;
+}
+
+/* ANIMATIONS - END */
+
+/* ADAPTATION - START */
+
+/* ADAPTATION - END */
+
+/*!!!!!! FOR ANOTHER PAGES - start!!!!!!*/
+
+/* MAIN */
+
+.main_pages {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* MAIN - IMG - SIZE */
+
+.main_pages>div>div>img {
+    height: 600px;
+}
+
+.img_main_pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.all_container_pages {
+    display: flex;
+    flex-direction: column;
+    background: var(--white-100, #FFF);
+    border-radius: 50px;
+    padding: 48px;
+}
+
+.all_container_pages>div>img {
+    border-radius: 50px 50px 0px 0px;
+}
+
+/* ALL_DOWN_DESCRIPTION */
+
+.about_sneaker_pages {
+    margin-top: -50px;
+}
+
+/* ALL_DESCRIPTION */
+
+.description_pages {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+
+}
+
+/* RIGHT - DESCRIPTION */
+
+.right_pages {
+    width: 50%;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right_pages>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.h3_pages {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #121723;
+}
+
+.right_pages>div {
+    border-bottom: 1px solid #121723;
+}
+
+/* TEXTS_STYLE - START */
+
+.right_pages>div>p {
+    color: var(--black, #121723);
+    font-family: "Anonymous Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.h1_pages {
+    color: var(--black, #121723);
+    font-family: "Anonymous Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.h2_pages {
+    color: var(--black, #121723);
+    font-family: "Anonymous Pro";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.h3_pages {
+    color: var(--black, #121723);
+    font-family: "Anonymous Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.the_big_one_pages {
+    color: var(--black, #121723);
+    font-family: "Anonymous Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/* TEXTS_STYLE - END */
+
+/* ALSO */
+
+.also_like_pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sneaker_container_pages {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.sneaker_pages>div>a>img {
+    width: 350px;
+    height: 290px;
+}
+
+/* STYLE_CARD - START */
+
+.card_pages {
+    border-radius: 12px 12px 12px 12px;
+    background: var(--white, #FFF);
+}
+
+.card_pages>a>img {
+    border-radius: 12px 12px 0px 0px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+/* STYLE_CARD - END */
+
+.about_pages {
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 0px 24px;
+    align-items: flex-start;
+}
+
+/* TEXT STYLE */
+
+.sneaker_name_pages {
+    color: var(--black, #121723);
+    font-family: "Anonymous Pro";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sneaker_description_pages {
+    color: var(--black, #121723);
+    font-family: "Anonymous Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.also_like_pages>h1 {
+    color: var(--black, #121723);
+    font-family: "Anonymous Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 48px */
+}
+
+/* Animations */
+
+.card_pages>a:hover {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.card_pages:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    transition: box-shadow ease-in-out 150ms;
+    transition: transform ease-in-out 100ms;
+}
+
+/*!!!!!!FOR ANOTHER PAGES - start!!!!!!*/
