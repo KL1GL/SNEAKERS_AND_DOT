@@ -39,6 +39,7 @@ a {
     width: 100%;
     height: 26px;
     justify-content: space-between;
+    padding: 0 20px;
     align-items: center;
 }
 
@@ -157,6 +158,7 @@ a {
     background: var(--black, #121723);
     width: 100%;
     height: 142px;
+    padding: 0 20px;
     justify-content: center;
     align-items: center;
 }
