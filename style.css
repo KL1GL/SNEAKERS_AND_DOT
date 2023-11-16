@@ -271,7 +271,7 @@ li:hover {
 
 /* ADAPTATION - START */
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 375px) {
     .up {
         flex-direction: column;
     }
@@ -286,9 +286,6 @@ li:hover {
         justify-content: center;
     }
 
-    .h1 {
-        width: 100%;
-    }
 }
 
 /* ADAPTATION - END */
@@ -308,7 +305,7 @@ li:hover {
 /* MAIN - IMG - SIZE */
 
 .main_pages>div>div>img {
-    height: 600px;
+    width: 100%;
 }
 
 .img_main_pages {
@@ -328,14 +325,6 @@ li:hover {
 .all_container_pages>div>img {
     border-radius: 50px 50px 0px 0px;
 }
-
-/* ALL_DOWN_DESCRIPTION */
-
-.about_sneaker_pages {
-    margin-top: -50px;
-}
-
-/* ALL_DESCRIPTION */
 
 .description_pages {
     display: flex;
@@ -434,7 +423,6 @@ li:hover {
 
 .sneaker_pages>div>a>img {
     width: 350px;
-    height: 290px;
 }
 
 /* STYLE_CARD - START */
@@ -506,7 +494,7 @@ li:hover {
 
 /* ADAPTATION */
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 375px) {
     .up {
         flex-direction: column;
     }
@@ -524,10 +512,6 @@ li:hover {
         padding: 12px;
         margin-right: 12px;
         margin-left: 12px;
-    }
-
-    .about_sneaker_pages {
-        margin-top: -40px;
     }
 
     .also_like_pages {
