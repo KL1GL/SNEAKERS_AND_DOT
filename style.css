@@ -269,26 +269,6 @@ li:hover {
 
 /* ANIMATIONS - END */
 
-/* ADAPTATION - START */
-
-@media screen and (max-width: 375px) {
-    .up {
-        flex-direction: column;
-    }
-
-    .down {
-        flex-direction: column;
-    }
-
-    .sneaker_all {
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-
-}
-
-/* ADAPTATION - END */
 
 /*!!!!!! FOR ANOTHER PAGES - start!!!!!!*/
 
@@ -492,9 +472,12 @@ li:hover {
     transition: transform ease-in-out 100ms;
 }
 
-/* ADAPTATION */
+/*!!!!!!FOR ANOTHER PAGES - end!!!!!!*/
 
+/* adaptation */
 @media screen and (max-width: 375px) {
+
+    /* all */
     .up {
         flex-direction: column;
     }
@@ -503,6 +486,20 @@ li:hover {
         flex-direction: column;
     }
 
+    /* index */
+
+    .sneaker_all {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .h1 {
+        font-size: 32px;
+        margin-left: 5%;
+    }
+
+    /* pages */
     .main_pages>div>div>img {
         width: 100%;
         height: 100%;
@@ -518,6 +515,23 @@ li:hover {
         display: none;
     }
 
-}
+    .h1_pages {
+        font-size: 32px;
+    }
 
-/*!!!!!!FOR ANOTHER PAGES - end!!!!!!*/
+    .h2_pages {
+        font-size: 20px;
+    }
+
+    .h3_pages {
+        font-size: 24px;
+    }
+
+    .right_pages>div>p {
+        font-size: 16px;
+    }
+
+    .the_big_one_pages>p {
+        font-size: 16px;
+    }
+}
